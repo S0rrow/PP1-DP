@@ -64,7 +64,7 @@ public class CLAMITest {
 		
 		CLAMI.main(args);
 		
-		String[] args2 = {"-f","data/Game.arff","-l","label","-p", "buggy", "-m"};
+		String[] args2 = {"-f","data/FPSAnimator.arff","-l","label","-p", "buggy", "-m"};
 		
 		CLAMI.main(args2);
 	}
