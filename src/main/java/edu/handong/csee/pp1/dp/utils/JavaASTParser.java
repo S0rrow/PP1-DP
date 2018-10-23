@@ -32,7 +32,7 @@ public class JavaASTParser {
 
 	public JavaASTParser(String source){
 		this.source = source;
-		praseJavaFile(source);
+		parseJavaFile(source);
 	}
 	
 	public int getLineNum(int startPosition){
@@ -47,7 +47,7 @@ public class JavaASTParser {
 		return cUnit;
 	}
 
-	public void praseJavaFile(String source){
+	public void parseJavaFile(String source){
 
 		ASTParser parser = ASTParser.newParser(AST.JLS8);
 
