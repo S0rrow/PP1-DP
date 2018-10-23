@@ -13,7 +13,7 @@ public class MainTest {
 		// TASK1 TODO 아래 args적절히 수정. MetricCollector.java를 완성하면, arff파일에 다양한 값들을 볼 수 있음.
 		// (1) 첫번째 파라미터: 현재 수정하고자 하는 PP1-DP의 경로를 값으로 할당 (본인의 경로에 맞게 적당히 수정)
 		// (2) 두번째 파라미터: 첫번째 파라미터에 넣은 git 레포지토리에서 최종 생성된 training data file이름. data/로 시작해야 함.
-		String[] args = {"C:\\Users\\jaech\\git\\PP1-DP","data/PP1-DP.arff"};
+		String[] args = {"C:\\git\\PP1-DP","data/PP1-DP.arff"};
 		// String[] args = {"/use/this/style/for/your/path"}; // for mac users
 		
 		assertEquals(args.length,2);
