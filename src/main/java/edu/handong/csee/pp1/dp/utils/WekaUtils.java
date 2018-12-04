@@ -42,7 +42,7 @@ public class WekaUtils {
 	static public Instances generateWekaInstances(ArrayList<RawInstance> rawInstances) {
 		
 		ArrayList<Attribute> attributes = createAttributeInfoForClassfication(RawInstance.NUMMETRICS + 1); //for label +1
-		Instances newInstnaces = new Instances("newData", attributes, 0);
+		Instances newInstances = new Instances("newData", attributes, 0);
 		
 		for(RawInstance rawInstance:rawInstances) {
 			double[] values = new double[attributes.size()];
@@ -53,12 +53,12 @@ public class WekaUtils {
 			
 			values[attributes.size()-1] = Double.NaN; // 메트릭만 수집해서 버그인지 아닌지 알 수 없어서, 레이블 정보는 그냥 NaN값 입력.
 			
-			newInstnaces.add(new DenseInstance(1.0, values));
+			newInstances.add(new DenseInstance(1.0, values));
 		}
 		
-		newInstnaces.setClass(newInstnaces.attribute(labelName));
+		newInstances.setClass(newInstances.attribute(labelName));
 		
-		return newInstnaces;
+		return newInstances;
 	}
 
 	/**

@@ -2,7 +2,6 @@ package edu.handong.csee.pp1.dp;
 
 import java.io.File;
 import java.util.ArrayList;
-
 import edu.handong.csee.pp1.dp.utils.JavaASTParser;
 import edu.handong.csee.pp1.dp.utils.Utils;
 import edu.handong.csee.pp1.dp.utils.WekaUtils;

@@ -59,8 +59,8 @@ public class Main {
 	}
 	
 	public void testCLAMI() {
-		
-		String[] args = {"-f","data/new_repo.arff","-l","label","-p", "buggy", "-m"};
+		String bestCutoff = "50";
+		String[] args = {"-f","data/new_repo.arff","-l","label","-p", "buggy", "-m", "-c", bestCutoff};
 
 		CLAMI.main(args);
 	}
