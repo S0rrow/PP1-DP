@@ -30,7 +30,7 @@ public class MetricCollector {
 		if(Main.INFO)
 			System.out.println(javaFiles.size() + " java files were found. Instances with metrics will be generated");
 		
-		rawInstances = new ArrayList<RawInstance>(); // Instancew저장할 수 있는 ArrayList 메모리에 생성.
+		rawInstances = new ArrayList<RawInstance>(); // Instance 저장할 수 있는 ArrayList 메모리에 생성.
 		
 		// 각 Java파일에 있는 코드에서 메트릭을 뽑아내기.
 		collectMetrics();

@@ -1,7 +1,5 @@
 package edu.handong.csee.pp1.dp;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import net.lifove.clami.CLAMI;
@@ -19,39 +17,39 @@ public class CLAMITest {
 	@Test
 	public void testCLAWithApacheProject() {
 		
-		String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE"};
+		//String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE"};
 		
 		
-		CLAMI.main(args);
+		//CLAMI.main(args);
 	}
 
 	@Test
 	public void testCLAMIWithApacheProject() {
 		
-		String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m"};
+		//String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m"};
 		
 		
-		CLAMI.main(args);
+		//CLAMI.main(args);
 	}
 	
 	@Test
 	public void testCLAMIWithApacheProjectByRandomForest() {
 		
-		String[] args = {"-a", "weka.classifiers.trees.RandomForest",
-				         "-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m"};
+		//String[] args = {"-a", "weka.classifiers.trees.RandomForest",
+				         //"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m"};
 		
 		
-		CLAMI.main(args);
+		//CLAMI.main(args);
 	}
 	
 	@Test
 	public void testCLAMIWithApacheProjectByBayesNet() {
 		
-		String[] args = {"-a", "weka.classifiers.bayes.BayesNet",
-				         "-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m"};
+		//String[] args = {"-a", "weka.classifiers.bayes.BayesNet",
+				         //"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m"};
 		
 		
-		CLAMI.main(args);
+		//CLAMI.main(args);
 	}
 	
 	@Test
@@ -60,13 +58,13 @@ public class CLAMITest {
 		// TASK3: Conduct defect prediction by using CLAMI models
 		// complete this test case for the generated arff files from Task 2
 		
-		String[] args = {"-f","data/Game.arff","-l","label","-p", "buggy", "-m"};
+		//String[] args = {"-f","data/Game.arff","-l","label","-p", "buggy", "-m"};
 		
-		CLAMI.main(args);
+		//CLAMI.main(args);
 		
-		String[] args2 = {"-f","data/FPSAnimator.arff","-l","label","-p", "buggy", "-m"};
+		//String[] args2 = {"-f","data/FPSAnimator.arff","-l","label","-p", "buggy", "-m"};
 		
-		CLAMI.main(args2);
+		//CLAMI.main(args2);
 	}
 	
 	@Test
@@ -86,11 +84,11 @@ public class CLAMITest {
 		
 		// TASK5 TODO Use this method to find the best cutoff for f-measure
 		
-		String bestCutoff = "50";
+		//String bestCutoff = "50";
 		
-		String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m", "-c", bestCutoff};
+		//String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m", "-c", bestCutoff};
 
-		CLAMI.main(args);
+		//CLAMI.main(args);
 	}
 
 }
